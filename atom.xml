@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://1988star.github.io</id>
+    <title>Xxのblog</title>
+    <updated>2022-07-16T13:58:11.705Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://1988star.github.io"/>
+    <link rel="self" href="https://1988star.github.io/atom.xml"/>
+    <subtitle>路虽远行则将至</subtitle>
+    <logo>https://1988star.github.io/images/avatar.png</logo>
+    <icon>https://1988star.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, Xxのblog</rights>
+    <entry>
+        <title type="html"><![CDATA[第一篇博客]]></title>
+        <id>https://1988star.github.io/post/myblog/</id>
+        <link href="https://1988star.github.io/post/myblog/">
+        </link>
+        <updated>2022-05-17T03:02:38.000Z</updated>
+    </entry>
+</feed>

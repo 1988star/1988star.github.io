@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>关于 | Xxのblog</title>
+<link rel="shortcut icon" href="https://1988star.github.io/favicon.ico?v=1657979606276">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://1988star.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="关于 | Xxのblog - Atom Feed" href="https://1988star.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+欢迎来到我的小站呀，很高兴遇见你！😝
+
+🏠 关于我的博客
+👨‍💻 野路子IT，纯粹瞎折腾
+⛹ 喜欢唱K打游戏
+📧 E-mail：SyQI8080@163.com
+..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://1988star.github.io">
+  <img class="avatar" src="https://1988star.github.io/images/avatar.png?v=1657979606276" alt="">
+  </a>
+  <h1 class="site-title">
+    Xxのblog
+  </h1>
+  <p class="site-description">
+    路虽远行则将至
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          Home
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          Archives
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          Tags
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          About
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              关于
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-05-01
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！😝</p>
+</blockquote>
+<h2 id="关于我的博客">🏠 关于我的博客</h2>
+<h2 id="野路子it纯粹瞎折腾">👨‍💻 野路子IT，纯粹瞎折腾</h2>
+<h2 id="喜欢唱k打游戏">⛹ 喜欢唱K打游戏</h2>
+<h2 id="e-mailsyqi8080163com">📧 E-mail：SyQI8080@163.com</h2>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2">🏠 关于我的博客</a></li>
+<li><a href="#%E9%87%8E%E8%B7%AF%E5%AD%90it%E7%BA%AF%E7%B2%B9%E7%9E%8E%E6%8A%98%E8%85%BE">👨‍💻 野路子IT，纯粹瞎折腾</a></li>
+<li><a href="#%E5%96%9C%E6%AC%A2%E5%94%B1k%E6%89%93%E6%B8%B8%E6%88%8F">⛹ 喜欢唱K打游戏</a></li>
+<li><a href="#e-mailsyqi8080163com">📧 E-mail：SyQI8080@163.com</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Copyright ©Xxのblog
+Powered by Gridea
+  <a class="rss" href="https://1988star.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
